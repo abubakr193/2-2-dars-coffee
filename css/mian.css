@@ -1,0 +1,216 @@
+  /* fraunces-900 - latin */
+  @font-face {
+    font-family: 'Fraunces';
+    font-style: normal;
+    font-weight: 900;
+    src: url('../fonts/fraunces-v10-latin-900.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../fonts/fraunces-v10-latin-900.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/fraunces-v10-latin-900.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/fraunces-v10-latin-900.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/fraunces-v10-latin-900.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/fraunces-v10-latin-900.svg#Fraunces') format('svg'); /* Legacy iOS */
+  }
+
+  /* barlow-regular - latin */
+@font-face {
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/barlow-v5-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../fonts/barlow-v5-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/barlow-v5-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/barlow-v5-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/barlow-v5-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/barlow-v5-latin-regular.svg#Barlow') format('svg'); /* Legacy iOS */
+  }
+  /* barlow-700 - latin */
+  @font-face {
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/barlow-v5-latin-700.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../fonts/barlow-v5-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/barlow-v5-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/barlow-v5-latin-700.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/barlow-v5-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/barlow-v5-latin-700.svg#Barlow') format('svg'); /* Legacy iOS */
+  }
+
+  * {
+      box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Fraunces', 'Barlow', 'Arial', sans-serif;
+    font-size: 16px;
+    color: #000000;
+  }
+
+  img {
+      vertical-align: middle;
+      object-fit: cover;
+  }
+
+  .container {
+      width: 1320px;
+      margin: 0 auto;
+      padding: 0 20px;
+  }
+
+  .header .container {
+      display: flex;
+      align-items: center;
+      margin-top: 44px;
+      margin-bottom: 45px;
+  }
+
+  .nav {
+    margin-left: auto;
+  }
+
+  .nav-list {
+    display: flex;
+    list-style-type: none;
+  }
+
+  .nav-item + .nav-item {
+      margin-left: 32px;
+  }
+
+  .nav-link {
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 15px;
+    color: #83888F;
+    transition: color 0.2s ease;
+  }
+
+  .nav-link:active {
+    color: #000000;
+  }
+
+  .hero .container {
+    width: 1280px;
+    height: 600px;
+    margin-bottom: 256px;
+    padding-top: 20px;
+    background-image: url('../images/Bitmap.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 1280px 600px;
+    border-radius: 10px;
+  }
+
+  .hero-heading {
+    width: 493px;
+    margin: 0;
+    margin-top: 117px;
+    margin-bottom: 32px;
+    margin-left: 85px;
+    font-weight: 900;
+    font-size: 72px;
+    line-height: 72px;
+    color: #FEFCF7;
+}
+
+.hero-paragrahp {
+    width: 445px;
+    margin: 0;
+    margin-bottom: 56px;
+    margin-left: 85px;
+    font-family: 'Barlow';
+    font-size: 16px;
+    line-height: 26px;
+    color: #FEFCF7;
+    opacity: 0.8;
+}
+
+.hero-link {
+    width: 217px;
+    margin-left: 85px;
+    padding: 15px 31px;
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 25px;
+    background-color: #0E8784;
+    color: #FEFCF7;
+    border-radius: 6px;
+    transition: background-color 0.2s ease;
+}
+
+.hero-link:active {
+    background-color: #66D2CF;
+}
+
+/* OUR-COLLECTIONS */
+
+.our-collections-list {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.our-collections-item {
+    width: 255px;
+}
+
+.our-collections-item::before {
+    width: 255px;
+    height: 193px;
+    display: block;
+    background-image: url('../images/espresso.png');
+    background-repeat: no-repeat;
+    content: '';
+}
+
+.our-collections-list:nth-child(2) .our-collections-item::before {
+    width: 255px;
+    height: 193px;
+    display: block;
+    background-image: url('../images/planalto.svg');
+    background-repeat: no-repeat;
+    content: '';
+}
+
+.our-collections-list:nth-child(3) .our-collections-item::before {
+    width: 255px;
+    height: 193px;
+    display: block;
+    background-image: url('../images/piccollo.svg');
+    background-repeat: no-repeat;
+    content: '';
+}
+
+.our-collections-list:nth-child(4) {
+    width: 237px;
+    height: 177px;
+    display: block;
+    background-image: url('../images/danche.svg');
+    background-repeat: no-repeat;
+    content: '';
+}
+
+.our-collections-item + .our-collections-item {
+    margin-left: 30px;
+}
+
+.collections-heading {
+    text-align: center;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 32px;
+    color: #333D4B;
+}
+
+.our-collection-paragrahp {
+    font-family: 'Barlow';
+    font-size: 16px;
+    line-height: 26px;
+    color: #333D4B;
+}
